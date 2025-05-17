@@ -18,6 +18,13 @@ def main():
         return
 
     print("\n Trying to book your reservation...\n")
+    # Add user details to the data dictionary
+    data["user_details"] = {
+        "first_name": "Your",  # Replace with actual user details
+        "last_name": "Name",
+        "email": "your.email@example.com",
+        "phone": "1234567890"
+    }
     result = book_reservation(data)
 
     if result.get("success"):
